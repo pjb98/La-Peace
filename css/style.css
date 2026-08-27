@@ -364,6 +364,34 @@ img { max-width: 100%; display: block; }
 }
 .lore__video-card p { font-weight: 700; font-size: 1.1rem; margin-bottom: 1rem; }
 
+/* ---------- Sacred Footage ---------- */
+.footage {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+.footage__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.footage__card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 3px solid var(--ink);
+  box-shadow: var(--shadow);
+  background: var(--ink);
+}
+.footage__card video {
+  width: 100%;
+  max-height: 520px;
+  display: block;
+  background: var(--ink);
+}
+
 /* ---------- Gallery ---------- */
 .gallery {
   position: relative;

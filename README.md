@@ -18,13 +18,19 @@ python3 -m http.server 8000
 Drop files into `assets/images/` with these exact names and they'll appear
 automatically (placeholders show until then):
 
-- `la-peace-elder.png` — the big portrait in the hero section (the old man /
-  Kai's "La Peace" alter ego)
-- `meme-1.png` through `meme-6.png` — the meme gallery grid
-- `favicon.png` — browser tab icon
+- `la-peace-elder.jpg` — the big portrait in the hero section (in place)
+- `meme-1.jpg`, `meme-2.jpg` — in place (the ascension shot, "I'm in tears bro")
+- `meme-3.png` through `meme-6.png` — still placeholders, waiting on more memes
+- `favicon.png` — browser tab icon (still a placeholder)
 
 You can add more gallery cards by copying a `.gallery__card` block in
 `index.html` and pointing it at a new image filename.
+
+## Video clips
+
+Two TikTok clips of La Peace live in `assets/videos/` (`clip-1.mp4`,
+`clip-2.mp4`, transcoded to web-friendly H.264/AAC with poster frames) and
+render in the "Sacred Footage" section between Lore and the meme gallery.
 
 ## Things to update before launch
 
