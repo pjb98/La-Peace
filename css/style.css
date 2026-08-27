@@ -71,30 +71,6 @@ img { max-width: 100%; display: block; }
   font-style: italic;
 }
 
-/* ---------- Ticker ---------- */
-.ticker {
-  background: var(--indigo-deep);
-  color: var(--gold-soft);
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.05rem;
-  letter-spacing: 0.5px;
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 0.55rem 0;
-  position: relative;
-  z-index: 50;
-}
-.ticker__track {
-  display: inline-flex;
-  animation: scroll-left 46s linear infinite;
-}
-.ticker__track span { padding-right: 0; }
-@keyframes scroll-left {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
 /* ---------- Floating background blocks ---------- */
 .bg-blocks {
   position: fixed;
