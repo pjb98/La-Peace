@@ -113,11 +113,11 @@ img { max-width: 100%; display: block; }
   opacity: 0.28;
   animation: drift 16s ease-in-out infinite;
 }
-.block--1 { top: 10%; left: 5%; animation-delay: 0s; background-image: url('../assets/images/lapis-shard.svg'); }
-.block--2 { top: 25%; right: 8%; animation-delay: 2s; width: 30px; height: 30px; background-image: url('../assets/images/diamond-gem.svg'); }
-.block--3 { top: 60%; left: 12%; animation-delay: 4s; width: 50px; height: 50px; background-image: url('../assets/images/lapis-shard.svg'); }
-.block--4 { top: 75%; right: 15%; animation-delay: 6s; background-image: url('../assets/images/diamond-gem.svg'); }
-.block--5 { top: 40%; left: 45%; animation-delay: 3s; width: 26px; height: 26px; opacity: 0.18; background-image: url('../assets/images/lapis-shard.svg'); }
+.block--1 { top: 10%; left: 5%; animation-delay: 0s; background-image: url('../assets/images/mylapisart.png'); }
+.block--2 { top: 25%; right: 8%; animation-delay: 2s; width: 30px; height: 30px; background-image: url('../assets/images/mydiamondart.png'); }
+.block--3 { top: 60%; left: 12%; animation-delay: 4s; width: 50px; height: 50px; background-image: url('../assets/images/mylapisart.png'); }
+.block--4 { top: 75%; right: 15%; animation-delay: 6s; background-image: url('../assets/images/mydiamondart.png'); }
+.block--5 { top: 40%; left: 45%; animation-delay: 3s; width: 26px; height: 26px; opacity: 0.18; background-image: url('../assets/images/mylapisart.png'); }
 @keyframes drift {
   0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.2; }
   50% { transform: translateY(-22px) rotate(6deg); opacity: 0.32; }
