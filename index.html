@@ -13,6 +13,70 @@
 </head>
 <body>
 
+<!-- Icon defs, reused by <use> throughout the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-rocket">
+      <path d="M12 2c-3 2-4.5 5-4.5 9 0 2 .6 3.6 1.7 5l2.8 2.8 2.8-2.8c1.1-1.4 1.7-3 1.7-5 0-4-1.5-7-4.5-9z"/>
+      <circle cx="12" cy="9.5" r="1.3"/>
+      <path d="M7.5 15l-2 4.5 3-1"/>
+      <path d="M16.5 15l2 4.5-3-1"/>
+    </g>
+    <g id="i-chart">
+      <polyline points="3,17 9,11 13,15 21,6"/>
+      <polyline points="14.5,6 21,6 21,12.5"/>
+    </g>
+    <g id="i-search">
+      <circle cx="10" cy="10" r="6.5"/>
+      <line x1="21" y1="21" x2="14.6" y2="14.6"/>
+    </g>
+    <g id="i-scroll">
+      <path d="M6 4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h1"/>
+      <path d="M6 4h11a2 2 0 0 1 2 2v10"/>
+      <path d="M18 20a2 2 0 0 0 2-2 2 2 0 0 0-2-2h-1"/>
+      <path d="M18 20H7a2 2 0 0 1-2-2V8"/>
+      <line x1="9" y1="9" x2="15" y2="9"/>
+      <line x1="9" y1="12.5" x2="15" y2="12.5"/>
+    </g>
+    <g id="i-video">
+      <rect x="3" y="7" width="12" height="10" rx="2"/>
+      <path d="M15 10.2l6-3.2v10l-6-3.2z"/>
+    </g>
+    <g id="i-clapper">
+      <g transform="rotate(-7 12 6.6)">
+        <rect x="3" y="4.4" width="18" height="4.4" rx="1"/>
+        <line x1="6.4" y1="4.4" x2="8" y2="8.8"/>
+        <line x1="10.9" y1="4.4" x2="12.5" y2="8.8"/>
+        <line x1="15.4" y1="4.4" x2="17" y2="8.8"/>
+      </g>
+      <rect x="3" y="10" width="18" height="9.6" rx="1.5"/>
+    </g>
+    <g id="i-gallery">
+      <rect x="3" y="4" width="18" height="16" rx="2"/>
+      <circle cx="8.5" cy="9.5" r="1.5"/>
+      <path d="M21 16l-5.5-5.5a1.5 1.5 0 0 0-2 0L4 19"/>
+    </g>
+    <g id="i-broken">
+      <rect x="3" y="4" width="18" height="16" rx="2"/>
+      <line x1="3" y1="4" x2="21" y2="20"/>
+    </g>
+    <g id="i-flame">
+      <path d="M12 21a6 6 0 0 1-6-6c0-2.2 1.1-3.6 2-5 .1 1.6.9 2.4 1.8 2.4-.7-3.1.4-6 3-8.4-.4 2.7.6 4.8 2.3 6.4 1.7 1.7 2.9 3.4 2.9 5.6a6 6 0 0 1-6 6z"/>
+      <path d="M12 18a2.7 2.7 0 0 1-1.8-4.6c.4 1 1 1.4 1.6 1.2-.3-1.4.2-2.6 1.4-3.6-.1 1.2.4 2.1 1.2 2.9.6.6 1.2 1.4 1.2 2.4A2.7 2.7 0 0 1 12 18z"/>
+    </g>
+    <g id="i-cart">
+      <circle cx="9" cy="20" r="1.2" fill="currentColor" stroke="none"/>
+      <circle cx="18" cy="20" r="1.2" fill="currentColor" stroke="none"/>
+      <path d="M3 4h2l2.4 12h10.2l1.9-8H6.2"/>
+    </g>
+    <g id="i-note">
+      <circle cx="7" cy="17" r="2.3"/>
+      <circle cx="16" cy="15" r="2.3"/>
+      <path d="M9.3 17V5.5L18.3 4v11"/>
+    </g>
+  </defs>
+</svg>
+
 <!-- Floating background blocks -->
 <div class="bg-blocks" aria-hidden="true">
   <div class="block block--1"></div>
@@ -61,9 +125,9 @@
       </div>
 
       <div class="hero__actions">
-        <a class="btn btn--primary" href="https://pump.fun/coin/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener">🚀 Buy on Pump.fun</a>
-        <a class="btn btn--secondary" href="https://dexscreener.com/solana/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener">📈 Chart</a>
-        <a class="btn btn--secondary" href="https://solscan.io/token/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener">🔍 Solscan</a>
+        <a class="btn btn--primary" href="https://pump.fun/coin/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener"><svg class="icon btn__icon"><use href="#i-rocket"/></svg> Buy on Pump.fun</a>
+        <a class="btn btn--secondary" href="https://dexscreener.com/solana/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener"><svg class="icon btn__icon"><use href="#i-chart"/></svg> Chart</a>
+        <a class="btn btn--secondary" href="https://solscan.io/token/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener"><svg class="icon btn__icon"><use href="#i-search"/></svg> Solscan</a>
       </div>
     </div>
 
@@ -81,7 +145,7 @@
 
   <!-- LORE -->
   <section id="lore" class="lore">
-    <h2 class="section-title">The Lore <span class="section-title-emoji">📜</span></h2>
+    <h2 class="section-title">The Lore <svg class="icon section-title-emoji"><use href="#i-scroll"/></svg></h2>
 
     <div class="ore-compare">
       <div class="ore-compare__side">
@@ -127,7 +191,7 @@
     </div>
 
     <div class="lore__video-card">
-      <p>🎥 Watch where it all started:</p>
+      <p><svg class="icon video-icon"><use href="#i-video"/></svg>Watch where it all started:</p>
       <a href="https://www.tiktok.com/@kai_cenat/video/7677377348949347615" target="_blank" rel="noopener" class="btn btn--secondary">Watch the TikTok</a>
     </div>
 
@@ -158,7 +222,7 @@
 
   <!-- SACRED FOOTAGE -->
   <section class="footage">
-    <h2 class="section-title">Sacred Footage <span class="section-title-emoji">🎬</span></h2>
+    <h2 class="section-title">Sacred Footage <svg class="icon section-title-emoji"><use href="#i-clapper"/></svg></h2>
     <p class="section-subtitle">La Peace, in motion.</p>
     <div class="footage__grid">
       <div class="footage__card">
@@ -176,7 +240,7 @@
 
   <!-- MEME GALLERY -->
   <section id="gallery" class="gallery">
-    <h2 class="section-title">Meme Gallery <span class="section-title-emoji">🖼️</span></h2>
+    <h2 class="section-title">Meme Gallery <svg class="icon section-title-emoji"><use href="#i-gallery"/></svg></h2>
     <p class="section-subtitle">The evidence. The history. The bag.</p>
     <div class="gallery__grid" id="gallery-grid">
       <div class="gallery__card" data-caption="The Ascension">
@@ -185,7 +249,7 @@
       </div>
       <div class="gallery__card" data-caption="Chat's reaction">
         <img src="assets/images/meme-2.jpg" alt="I'm in tears bro meme" loading="lazy" onerror="this.closest('.gallery__card').classList.add('gallery__card--empty')">
-        <div class="gallery__placeholder">😭<span>meme-2.jpg</span></div>
+        <div class="gallery__placeholder"><svg class="icon gallery__placeholder-icon"><use href="#i-broken"/></svg><span>meme-2.jpg</span></div>
       </div>
     </div>
     <p class="gallery__note">Send me more meme pics and I'll drop them straight into this grid.</p>
@@ -208,7 +272,7 @@
         <span class="stat-card__label">LP Locked / Burned</span>
       </div>
       <div class="stat-card">
-        <span class="stat-card__value">🔥</span>
+        <span class="stat-card__value"><svg class="icon stat-card__icon"><use href="#i-flame"/></svg></span>
         <span class="stat-card__label">Mint Revoked</span>
       </div>
     </div>
@@ -217,9 +281,9 @@
 
   <!-- BUY -->
   <section id="buy" class="buy">
-    <h2 class="section-title">Buy $LAPEACE <span class="section-title-emoji">🛒</span></h2>
+    <h2 class="section-title">Buy $LAPEACE <svg class="icon section-title-emoji"><use href="#i-cart"/></svg></h2>
     <div class="buy__cta">
-      <a class="btn btn--primary btn--lg" href="https://pump.fun/coin/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener">🚀 Buy $LAPEACE Now</a>
+      <a class="btn btn--primary btn--lg" href="https://pump.fun/coin/CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump" target="_blank" rel="noopener"><svg class="icon btn__icon"><use href="#i-rocket"/></svg> Buy $LAPEACE Now</a>
     </div>
   </section>
 
@@ -229,7 +293,7 @@
     <div class="community__links">
       <a href="https://x.com/Its_La_Peace" class="social-btn social-btn--x" target="_blank" rel="noopener">𝕏 Twitter</a>
       <a href="https://x.com/i/communities/1861401413311443182" class="social-btn social-btn--community" target="_blank" rel="noopener"><img src="assets/images/mylapisart.png" alt="" class="social-btn__icon"> X Community</a>
-      <a href="https://www.tiktok.com/@kai_cenat" class="social-btn social-btn--tt" target="_blank" rel="noopener">🎵 TikTok</a>
+      <a href="https://www.tiktok.com/@kai_cenat" class="social-btn social-btn--tt" target="_blank" rel="noopener"><svg class="icon social-btn__icon"><use href="#i-note"/></svg> TikTok</a>
     </div>
   </section>
 
