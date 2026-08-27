@@ -242,33 +242,36 @@
   <section id="gallery" class="gallery">
     <h2 class="section-title">Meme Gallery <svg class="icon section-title-emoji" viewBox="0 0 24 24"><use href="#i-gallery"/></svg></h2>
     <p class="section-subtitle">The evidence. The history. The bag.</p>
-    <div class="gallery__grid" id="gallery-grid">
-      <div class="gallery__card" data-caption="The Ascension">
-        <img src="assets/images/meme-1.jpg" alt="La Peace ascending over the water at sunset" loading="lazy" onerror="this.closest('.gallery__card').classList.add('gallery__card--empty')">
-        <div class="gallery__placeholder"><img src="assets/images/mylapisart.png" alt="" class="gallery__placeholder-icon"><span>meme-1.jpg</span></div>
-      </div>
-      <div class="gallery__card" data-caption="Chat's reaction">
-        <img src="assets/images/meme-2.jpg" alt="I'm in tears bro meme" loading="lazy" onerror="this.closest('.gallery__card').classList.add('gallery__card--empty')">
-        <div class="gallery__placeholder"><svg class="icon gallery__placeholder-icon" viewBox="0 0 24 24"><use href="#i-broken"/></svg><span>meme-2.jpg</span></div>
-      </div>
-      <div class="gallery__card" data-caption="The Anatomy Lesson">
-        <img src="assets/images/meme-3.jpg" alt="La Peace as the anatomist in a Rembrandt-style painting" loading="lazy" onerror="this.closest('.gallery__card').classList.add('gallery__card--empty')">
-        <div class="gallery__placeholder"><svg class="icon gallery__placeholder-icon" viewBox="0 0 24 24"><use href="#i-broken"/></svg><span>meme-3.jpg</span></div>
-      </div>
-      <div class="gallery__card" data-caption="It's time.">
-        <img src="assets/images/meme-4.jpg" alt="La Peace reaching down from the clouds to Pepe" loading="lazy" onerror="this.closest('.gallery__card').classList.add('gallery__card--empty')">
-        <div class="gallery__placeholder"><svg class="icon gallery__placeholder-icon" viewBox="0 0 24 24"><use href="#i-broken"/></svg><span>meme-4.jpg</span></div>
-      </div>
-      <div class="gallery__card" data-caption="The Prophet">
-        <img src="assets/images/meme-5.jpg" alt="La Peace with staff, sunbeams overhead" loading="lazy" onerror="this.closest('.gallery__card').classList.add('gallery__card--empty')">
-        <div class="gallery__placeholder"><svg class="icon gallery__placeholder-icon" viewBox="0 0 24 24"><use href="#i-broken"/></svg><span>meme-5.jpg</span></div>
-      </div>
-      <div class="gallery__card" data-caption="Behind the scenes">
-        <img src="assets/images/meme-6.jpg" alt="Kai Cenat Instagram story as La Peace" loading="lazy" onerror="this.closest('.gallery__card').classList.add('gallery__card--empty')">
-        <div class="gallery__placeholder"><svg class="icon gallery__placeholder-icon" viewBox="0 0 24 24"><use href="#i-broken"/></svg><span>meme-6.jpg</span></div>
-      </div>
+    <!-- Slide data: add a <li> here to add a meme to the carousel -->
+    <ul id="meme-data" hidden>
+      <li data-src="assets/images/meme-1.jpg" data-alt="La Peace ascending over the water at sunset" data-caption="The Ascension"></li>
+      <li data-src="assets/images/meme-2.jpg" data-alt="I'm in tears bro meme" data-caption="Chat's reaction"></li>
+      <li data-src="assets/images/meme-3.jpg" data-alt="La Peace as the anatomist in a Rembrandt-style painting" data-caption="The Anatomy Lesson"></li>
+      <li data-src="assets/images/meme-4.jpg" data-alt="La Peace reaching down from the clouds to Pepe" data-caption="It's time."></li>
+      <li data-src="assets/images/meme-5.jpg" data-alt="La Peace with staff, sunbeams overhead" data-caption="The Prophet"></li>
+      <li data-src="assets/images/meme-6.jpg" data-alt="Kai Cenat Instagram story as La Peace" data-caption="Behind the scenes"></li>
+    </ul>
+
+    <div class="meme-carousel" id="meme-carousel" tabindex="0">
+      <button type="button" class="meme-carousel__arrow meme-carousel__arrow--prev" id="meme-prev" aria-label="Previous meme">
+        <svg class="icon" viewBox="0 0 24 24"><polyline points="15,4 7,12 15,20"/></svg>
+      </button>
+      <figure class="meme-carousel__frame" id="meme-carousel-frame">
+        <img id="meme-carousel-img" src="" alt="" class="meme-carousel__img">
+        <div class="meme-carousel__broken" id="meme-carousel-broken">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-broken"/></svg>
+          <span id="meme-carousel-broken-name"></span>
+        </div>
+        <figcaption class="meme-carousel__caption">
+          <span id="meme-carousel-caption"></span>
+          <span class="meme-carousel__count" id="meme-carousel-count"></span>
+        </figcaption>
+      </figure>
+      <button type="button" class="meme-carousel__arrow meme-carousel__arrow--next" id="meme-next" aria-label="Next meme">
+        <svg class="icon" viewBox="0 0 24 24"><polyline points="9,4 17,12 9,20"/></svg>
+      </button>
     </div>
-    <p class="gallery__note">Send me more meme pics and I'll drop them straight into this grid.</p>
+    <div class="meme-carousel__dots" id="meme-dots"></div>
   </section>
 
   <!-- TOKENOMICS -->
