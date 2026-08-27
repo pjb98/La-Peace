@@ -628,37 +628,7 @@ img { max-width: 100%; display: block; }
   margin: 5rem auto;
   padding: 0 1.5rem;
 }
-.buy__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2.8rem;
-}
-.buy__step {
-  text-align: center;
-  background: var(--white);
-  border: var(--border);
-  border-radius: var(--radius);
-  padding: 1.9rem 1.2rem;
-  box-shadow: var(--shadow);
-}
-.buy__num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--white);
-  margin-bottom: 0.8rem;
-}
-.buy__step h3 { font-family: var(--font-display); font-size: 1.25rem; margin: 0 0 0.5rem; color: var(--indigo-deep); }
-.buy__step p { margin: 0; color: #52605a; font-weight: 400; }
-.buy__cta { text-align: center; margin-top: 2.8rem; }
+.buy__cta { text-align: center; margin-top: 1.5rem; }
 
 /* ---------- Community ---------- */
 .community {
@@ -685,7 +655,7 @@ img { max-width: 100%; display: block; }
 }
 .social-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .social-btn--x { background: var(--indigo-deep); color: var(--white); }
-.social-btn--tg { background: var(--indigo); color: var(--white); }
+.social-btn--community { background: var(--indigo); color: var(--white); }
 .social-btn--tt { background: var(--white); color: var(--indigo-deep); border: var(--border); }
 
 /* ---------- Footer ---------- */

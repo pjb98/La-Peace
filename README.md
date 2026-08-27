@@ -20,7 +20,6 @@ automatically (placeholders show until then):
 
 - `la-peace-elder.jpg` — the big portrait in the hero section (in place)
 - `meme-1.jpg`, `meme-2.jpg` — in place (the ascension shot, "I'm in tears bro")
-- `meme-3.png` through `meme-6.png` — still placeholders, waiting on more memes
 - `favicon.png` — browser tab icon (still a placeholder)
 
 You can add more gallery cards by copying a `.gallery__card` block in
@@ -36,9 +35,8 @@ render in the "Sacred Footage" section between Lore and the meme gallery.
 
 - Contract address is already wired in (`CvjSaRcTmcrfutekYzrBEEdTWx1RmRTWDToqtXmCpump`)
   in the hero, Pump.fun, Dexscreener, and Solscan links.
-- Twitter/X and Telegram links in the "Join the Peace" section are currently
-  `#` placeholders — update the `href` values in `index.html` once those
-  exist.
+- Twitter/X (`https://x.com/Its_La_Peace`) and the X Community link are wired
+  in under "Join the Peace" in `index.html`.
 - Tokenomics numbers (`#tokenomics`) are placeholders — edit to match reality.
 
 ## Deploy
