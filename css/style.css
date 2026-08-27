@@ -383,6 +383,7 @@ img { max-width: 100%; display: block; }
 .ore-compare__img {
   width: 84px;
   height: 84px;
+  object-fit: contain;
   image-rendering: pixelated;
 }
 .ore-compare__label {
@@ -424,6 +425,7 @@ img { max-width: 100%; display: block; }
   right: -12px;
   width: 38px;
   height: 38px;
+  object-fit: contain;
   image-rendering: pixelated;
   border-radius: 50%;
   background: var(--paper);
